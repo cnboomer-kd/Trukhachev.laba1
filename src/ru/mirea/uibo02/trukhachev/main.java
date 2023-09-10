@@ -9,16 +9,30 @@ public class main {
         {
             sum += data[i];
         }
-        System.out.println("summa = " + data);
+        System.out.println("summa for = " + sum);
 
         int[] data1 = {0, 1, 2, 3, 4, 5};
         int sum1 = 0;
         int a = 0;
-        while(i < data1.length)
+        while(a < data1.length)
         {
-            sum += data1[i];
+            sum1 += data1[a];
             a++;
         }
-        System.out.println("summa = " + data1);
+        System.out.println("summa while = " + sum1);
+
+        int[] data2 = {0, 1, 2, 3, 4, 5};
+        int sum2 = 0;
+        int b = 0;
+        do
+        {
+            sum2 += data2[b];
+            b++;
+        }
+        while
+        (
+             b < data2.length
+        );
+        System.out.println("summa do while = " + sum2);
     }
 }

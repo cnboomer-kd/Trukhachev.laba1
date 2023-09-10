@@ -2,6 +2,7 @@ package ru.mirea.uibo02.trukhachev;
 
 import java.util.Arrays;
 import java.util.Random;
+import java.util.Scanner;
 
 public class main {
     public static void main(String[] args)
@@ -10,6 +11,7 @@ public class main {
         tsk4(args);
         tsk5();
         tsk6();
+        tsk7();
     }
 
     public static void tsk3()
@@ -91,5 +93,19 @@ public class main {
         Arrays.sort(arrayr);
         System.out.println("Sorted array: ");
         System.out.println(Arrays.toString(arrayr));
+    }
+
+    public static void tsk7()
+    {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter: ");
+        int number = scanner.nextInt();
+        scanner.close();
+        int factor = 1;
+        for(int i = 1; i <= number; i++)
+        {
+            factor *= i;
+        }
+        System.out.println("Factorial " + number + "is: " + factor);
     }
 }
